@@ -93,8 +93,20 @@ export default function SectionRoadmap(props) {
         </li>
       </ul>
       <h3 className={styles.subheading}>Ptolemy</h3>
-      <p className={styles.paragraph}>A new project for enterprise clients who also run data centers and want to backup their data to Filecoin.</p>
+      <p className={styles.paragraph}>
+        Ptolemy is designed to function as an orchestration engine to process large datasets typically confined to S3 buckets or contiguous filesystems. Ptolemy will package in car
+        files an entire filesystem structure in car files for deal making purposes. The goal of Ptolemy is to remove the effort around data prep for SPs and end users alike.
+      </p>
       <ul className={styles.list}>
+        <li className={styles.item}>
+          <strong>March 1st, 2023</strong> — Planned release of V1 with support for an HTTP API that users can use to invoke data processing on existing filesystems.
+        </li>
+        <li className={styles.item}>
+          <strong>March 22, 2023</strong> — Planned release of Ptolemy support for Web2 protocols, things like managing NFS/CIFS connectivity.
+        </li>
+        <li className={styles.item}>
+          <strong>April 15th, 2023</strong> — Addition of UI to allow point and click functions vice using HTTP API calls.
+        </li>
         <li className={styles.item}>
           <strong>May 12th, 2023</strong> — New roadmap released after our calibrations.
         </li>

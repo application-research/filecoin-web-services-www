@@ -1,4 +1,17 @@
 .body {
+  a {
+    color: var(--color-primary);
+    transition: 200ms ease all;
+    &:visited {
+      color: var(--color-primary);
+    }
+
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+      color: var(--color-primary);
+    }
+  }
 }
 
 .heading {
@@ -10,9 +23,9 @@
 .roadmapHeading {
   margin-top: 48px;
   font-size: 11px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.4px;
   text-transform: uppercase;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .subheading {
@@ -45,10 +58,34 @@
 }
 
 .item {
+  line-height: 1.5;
   margin-top: 16px;
+
+  strong {
+    font-family: 'Timestamp';
+    border-radius: 4px;
+    padding: 2px;
+    background: #ececec;
+    font-size: 12px;
+    color: #000;
+    vertical-align: center;
+    display: inline-block;
+  }
 }
 
 .website {
+  font-family: 'Timestamp';
   font-weight: 400;
   opacity: 0.5;
+}
+
+.image {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.subtle {
+  font-family: 'Timestamp';
+  opacity: 0.5;
+  font-weight: 400;
 }

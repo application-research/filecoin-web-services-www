@@ -82,6 +82,8 @@ export default function SectionRoadmap(props) {
       <h3 className={styles.subheading}>
         Bacalhau <span className={styles.subtle}>(External — Led by David Aronchick)</span>
       </h3>
+      <p className={styles.paragraph}>We are proud that Estuary supports Bacalhau on their mission</p>
+
       <p className={styles.paragraph}>
         A service intended to allow you to run arbitrary computation jobs over data that is already stored on the decentralised IPFS and Filecoin networks - or, more succinctly,
         allows you to perform Compute over Data. By using the Bacalhau network, itself decentralised and permissionless, you can not only run jobs that transform your data; you can

@@ -96,8 +96,8 @@ export default function SectionRoadmap(props) {
       </ul>
       <h3 className={styles.subheading}>Ptolemy</h3>
       <p className={styles.paragraph}>
-        Ptolemy is designed to function as an orchestration engine to process large datasets typically confined to S3 buckets or contiguous filesystems. Ptolemy will package in car
-        files an entire filesystem structure in car files for deal making purposes. The goal of Ptolemy is to remove the effort around data prep for SPs and end users alike.
+        Ptolemy is designed to function as an orchestration engine to process large datasets typically confined to S3 buckets or contiguous filesystems. Ptolemy will package an
+        entire filesystem structure in car files for deal making purposes. The goal of Ptolemy is to remove the effort around data prep for SPs and end users alike.
       </p>
       <ul className={styles.list}>
         <li className={styles.item}>

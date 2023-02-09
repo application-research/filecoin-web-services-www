@@ -32,7 +32,7 @@ export default function SectionRoadmap(props) {
       <p className={styles.paragraph}>
         Use ∆ Delta to upload all of your useful public data to Filecoin storage providers. Delta is a straight-forward Filecoin storage deal making tool that manages deals, and
         does not do anything else. It is purely for the function of helping Storage Providers fill capacity either through online or offline methods. It is written in Go and
-        designed to be paired well with bare-metal infrastructure. There is also quality of life such as CAR generation built in.
+        designed to be paired well with bare-metal infrastructure.
       </p>
       <ul className={styles.list}>
         <li className={styles.item}>

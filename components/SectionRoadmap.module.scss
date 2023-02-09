@@ -1,0 +1,54 @@
+.body {
+}
+
+.heading {
+  font-size: 2rem;
+  letter-spacing: 0.2px;
+  opacity: 0.8;
+}
+
+.roadmapHeading {
+  margin-top: 48px;
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.subheading {
+  margin-top: 24px;
+}
+
+.quote {
+  margin-top: 24px;
+  font-family: baskerville, serif;
+  line-height: 1.5;
+  padding: 24px 16px 24px 16px;
+  border-radius: 8px;
+  background: rgba(233, 233, 233, 1);
+}
+
+.desc {
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.paragraph {
+  margin-top: 16px;
+  line-height: 1.5;
+}
+
+.list {
+  margin-top: 24px;
+  padding-left: 24px;
+  margin-bottom: 64px;
+}
+
+.item {
+  margin-top: 16px;
+}
+
+.website {
+  font-weight: 400;
+  opacity: 0.5;
+}

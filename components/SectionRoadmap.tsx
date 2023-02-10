@@ -24,8 +24,8 @@ export default function SectionRoadmap(props) {
       <h2 className={styles.roadmapHeading}>Tools & Roadmap</h2>
       <h3 className={styles.subheading}>
         Delta{' '}
-        <a className={styles.website} href="https://delta.slate" target="_blank">
-          (https://delta.state)
+        <a className={styles.website} href="https://delta.store" target="_blank">
+          (https://delta.store)
         </a>
       </h3>
       <p className={styles.paragraph}>Our solution to archival and cold storage use cases.</p>

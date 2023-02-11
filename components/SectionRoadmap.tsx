@@ -115,6 +115,28 @@ export default function SectionRoadmap(props) {
       </ul>
 
       <h3 className={styles.subheading}>
+        Project Motion
+        <a className={styles.website} href="https://miro.com/app/board/uXjVP6Fpbrg=/?share_link_id=94081429216" target="_blank">
+          (Miro Board)
+        </a>
+      </h3>
+
+      <p className={styles.paragraph}>The Engineering team is proud to support Angelo on his vision</p>
+
+      <p className={styles.paragraph}>
+        Project Motion name comes from storage in motion and is designed to address the eminent need for 3rd party tooling and cloud offering integration. As a 3rd party
+        integration engine, the Motion engine can be fully integrated with your current stack, infrastructure and workloads. With it's open API you can store, process, retrieve and
+        track any size dataset between your solution and the Filecoin storage network. The goal of Project Motion is to make adoption of Filecoin as a storage tier in existing
+        tooling frictionless.
+      </p>
+
+      <ul className={styles.list}>
+        <li className={styles.item}>
+          <strong>Feb 28th, 2023</strong> — Initial roadmap release after internal discussions.
+        </li>
+      </ul>
+
+      <h3 className={styles.subheading}>
         Storage Market & API{' '}
         <a className={styles.website} href="https://storage.market" target="_blank">
           (https://storage.market)

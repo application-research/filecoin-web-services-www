@@ -115,7 +115,7 @@ export default function SectionRoadmap(props) {
       </ul>
 
       <h3 className={styles.subheading}>
-        Project Motion
+        Project Motion{' '}
         <a className={styles.website} href="https://miro.com/app/board/uXjVP6Fpbrg=/?share_link_id=94081429216" target="_blank">
           (Miro Board)
         </a>

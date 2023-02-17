@@ -32,7 +32,27 @@ export default function SectionRoadmap(props) {
       <p className={styles.paragraph}>
         Use ∆ Delta to upload all of your useful public data to Filecoin storage providers. Delta is a straight-forward Filecoin storage deal making tool that manages deals, and
         does not do anything else. It is purely for the function of helping Storage Providers fill capacity either through online or offline methods. It is written in Go and
-        designed to be paired well with bare-metal infrastructure.
+        designed to be paired well with bare-metal infrastructure.{' '}
+      </p>
+      <p className={styles.paragraph}>Features:</p>
+      <p className={styles.paragraph}>
+        ➝ Track which storage providers data is stored on <br />
+        ➝ Track deal state <br />
+        ➝ Failure handling and reconciliation <br />
+        ➝ Track file, sector metadata, CID <br />
+        ➝ Deal status tracking <br />
+        ➝ Custom configuration <br />
+        ➝ Storage provider details <br />
+        ➝ Offline deal prepping engine, micro service <br />
+        ➝ Online deal prepping engine, micro service <br />
+        ➝ Support HTTP, Bitswap <br />
+        ➝ CAR generation for each piece <br />
+        ➝ CommP calculation for each piece <br />
+        ➝ Retry testying <br />
+        ➝ Full tracking on deal state, data state, dataset state <br />
+        ➝ SSL terminated HA proxy (scale out solution) <br />
+        ➝ Containerization / docker / K8s capable <br />
+        ➝ API scoping / between modules / sandboxing <br />➝ CLI
       </p>
       <ul className={styles.list}>
         <li className={styles.item}>
@@ -61,6 +81,47 @@ export default function SectionRoadmap(props) {
         Estuary has always been a service where users can retrieve everything they upload. This makes Estuary usable by services and helps prove that Filecoin has "useful" data.
         Estuary will continue to commit to this promise and work with L2 solutions for retrieval to help provide more methods for users to get their data. Estuary is written in Go
         and is designed to be paired well with bare-metal infrastructure. You can run your own or rely on our mainline service.
+      </p>
+
+      <p className={styles.paragraph}>
+        <strong>Microservices are built with WhyPFS-Core</strong> ➝ a lightweight bare minimum peer node for build storage-centric applications. It has built in capabilities for
+        creating a Blockstore, peering with other IPFS and WhyPFS node peers, DAG service and Bitswap exchange to enable developers to build IPFS peer compatible applications.
+      </p>
+
+      <p className={styles.paragraph}>
+        <strong>You can provision Edge nodes</strong> ➝ a deal-making storage node on the edge. Edge is an application that is both an upload and retrieval gateway, and takes
+        advantage of the new modular deal making Engine “DELTA”. Edge is designed to store files for fast retrieval and “drips” down the files and contents to delta for each to
+        replicated and persisted on the filecoin network. Customers can use it as a gateway and a reliable deal-making broker/engine.
+      </p>
+
+      <p className={styles.paragraph}>Features:</p>
+
+      <p className={styles.paragraph}>
+        ➝ GUI for file management, settings <br />
+        ➝ API key generation <br />
+        ➝ Metamask authentication <br />
+        ➝ Pay for provisioning using Filecoin or USD <br />
+        ➝ Dedicated infrastructure for paying users <br />
+        ➝ Complete application API <br />
+        ➝ Track which storage providers data is stored on <br />
+        ➝ Track deal state <br />
+        ➝ Failure handling and reconciliation <br />
+        ➝ Track file, sector metadata, CID <br />
+        ➝ Deal status tracking <br />
+        ➝ Custom configuration <br />
+        ➝ Storage provider details <br />
+        ➝ Online deal prepping engine, micro service <br />
+        ➝ Support HTTP, Bitswap <br />
+        ➝ CAR generation for each piece <br />
+        ➝ CommP calculation for each piece <br />
+        ➝ Retrieval testing <br />
+        ➝ Retry testying <br />
+        ➝ Deal retrieving engine, micro service <br />
+        ➝ Full tracking on deal state, data state, dataset state <br />
+        ➝ Authentication <br />
+        ➝ SSL terminated HA proxy (scale out solution) <br />
+        ➝ Containerization / docker / K8s capable <br />
+        ➝ API scoping / between modules / sandboxing <br />➝ CLI
       </p>
       <ul className={styles.list}>
         <li className={styles.item}>

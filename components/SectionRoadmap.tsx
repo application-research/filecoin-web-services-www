@@ -72,6 +72,7 @@ export default function SectionRoadmap(props) {
           (https://estuary.tech)
         </a>
       </h3>
+      <img src="https://user-images.githubusercontent.com/310223/221114596-82d71663-9af6-46a5-b2c9-30b7b466b5c0.png" className={styles.image} />
       <p className={styles.paragraph}>Our solution to hot storage and application use cases.</p>
       <p className={styles.paragraph}>
         Estuary V2 involves infrastructure upgrades that will reduce the cost of operations to under $5,000 USD a month. These savings will save us a million a year. In addition

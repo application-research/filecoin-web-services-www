@@ -28,6 +28,7 @@ export default function SectionRoadmap(props) {
           (https://delta.store)
         </a>
       </h3>
+      <img src="https://user-images.githubusercontent.com/310223/221113426-80a53e2b-9eb1-470c-a26b-f3aba69008f6.png" className={styles.image} />
       <p className={styles.paragraph}>Our solution to archival and cold storage use cases.</p>
       <p className={styles.paragraph}>
         Use ∆ Delta to upload all of your useful public data to Filecoin storage providers. Delta is a straight-forward Filecoin storage deal making tool that manages deals, and

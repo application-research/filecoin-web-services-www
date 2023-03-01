@@ -1,8 +1,38 @@
+'use client';
+
 import styles from '@components/SectionRoadmap.module.scss';
 
 import * as React from 'react';
+import * as Utilities from '@common/utilities';
 
 export default function SectionRoadmap(props) {
+  const [data, setData] = React.useState({
+    total_content_consumed: 0,
+    total_e2e_deals: 0,
+    total_e2e_deals_in_bytes: 0,
+    total_import_deals: 0,
+    total_import_deals_in_bytes: 0,
+    total_miners: 0,
+    total_piece_commitment_made: 0,
+    total_piece_committed: 0,
+    total_proposal_made: 0,
+    total_proposal_sent: 0,
+    total_sealed_deal_in_bytes: 0,
+    total_storage_allocated: 0,
+    total_transfer_finished: 0,
+    total_transfer_started: 0,
+  });
+
+  React.useEffect(() => {
+    async function init() {
+      const response = await fetch('http://shuttle-4-bs2.estuary.tech:1414/open/stats/totals/info');
+      const json = await response.json();
+      setData({ ...json });
+    }
+
+    init();
+  }, []);
+
   return (
     <div className={styles.body}>
       <h1 className={styles.heading}>🌎 Filecoin Web Services</h1>
@@ -29,12 +59,48 @@ export default function SectionRoadmap(props) {
         </a>
       </h3>
       <img src="https://user-images.githubusercontent.com/310223/221113426-80a53e2b-9eb1-470c-a26b-f3aba69008f6.png" className={styles.image} />
-      <p className={styles.paragraph}>Our solution to archival and cold storage use cases.</p>
+      <p className={styles.paragraph}>Our solution to archival and cold storage use cases. See our Delta node's current performance:</p>
+
+      <div className={styles.performance}>
+        <span className={styles.dataTag}>
+          <span className={styles.dataTagLeft}>{data.total_e2e_deals}</span>
+          <span className={styles.dataTagRight}>End-to-end deals</span>
+        </span>
+        <span className={styles.dataTag}>
+          <span className={styles.dataTagLeft}>{Utilities.bytesToSize(data.total_e2e_deals_in_bytes)}</span>
+          <span className={styles.dataTagRight}>Total end-to-end size</span>
+        </span>
+
+        <span className={styles.dataTag}>
+          <span className={styles.dataTagLeft}>{data.total_import_deals}</span>
+          <span className={styles.dataTagRight}>Import deals</span>
+        </span>
+
+        <span className={styles.dataTag}>
+          <span className={styles.dataTagLeft}>{Utilities.bytesToSize(data.total_import_deals_in_bytes)}</span>
+          <span className={styles.dataTagRight}>Total import size</span>
+        </span>
+
+        <span className={styles.dataTag}>
+          <span className={styles.dataTagLeft}>{Utilities.bytesToSize(data.total_e2e_deals_in_bytes + data.total_import_deals_in_bytes)}</span>
+          <span className={styles.dataTagRight}>Total</span>
+        </span>
+
+        <span className={styles.dataTag}>
+          <span className={styles.dataTagLeft}>{Utilities.bytesToSize((data.total_e2e_deals_in_bytes + data.total_import_deals_in_bytes) * 1000)}</span>
+          <span className={styles.dataTagRight}>1000x scaled size potential</span>
+        </span>
+      </div>
+
       <p className={styles.paragraph}>
-        Use ∆ Delta to upload all of your useful public data to Filecoin storage providers. Delta is a straight-forward Filecoin storage deal making tool that manages deals, and
-        does not do anything else. It is purely for the function of helping Storage Providers fill capacity either through online or offline methods. It is written in Go and
-        designed to be paired well with bare-metal infrastructure.{' '}
+        Use ∆ Delta to upload all your data to Filecoin storage providers. Delta has a straight forward deal manager. Either import your deals or use the end-to-end tooling. It is
+        written in Go and designed to be paired well with bare-metal infrastructure. Delta can be integrated well with any deal preparation tooling such as{' '}
+        <a href="https://github.com/anjor/filecoin_data_prep_tools" target="_blank">
+          https://github.com/anjor/filecoin_data_prep_tools
+        </a>
+        .
       </p>
+
       <p className={styles.paragraph}>Features:</p>
       <p className={styles.paragraph}>
         ➝ Track which storage providers data is stored on <br />

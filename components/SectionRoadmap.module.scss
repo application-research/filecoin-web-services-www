@@ -94,3 +94,32 @@
   opacity: 0.5;
   font-weight: 400;
 }
+
+.performance {
+  margin-top: 16px;
+}
+
+.dataTag {
+  font-family: 'Timestamp';
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+  justify-content: space-between;
+  margin-bottom: 1px;
+}
+
+.dataTagLeft {
+  flex-shrink: 0;
+  width: 120px;
+  background: red;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.dataTagRight {
+  min-width: 10%;
+  width: 100%;
+  background: red;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.8);
+}

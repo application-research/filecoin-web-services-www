@@ -25,7 +25,7 @@ export default function SectionRoadmap(props) {
 
   React.useEffect(() => {
     async function init() {
-      const response = await fetch('http://shuttle-4-bs2.estuary.tech:1414/open/stats/totals/info');
+      const response = await fetch('https://node.delta.store/open/stats/totals/info');
       const json = await response.json();
       setData({ ...json });
     }

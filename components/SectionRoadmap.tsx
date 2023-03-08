@@ -9,10 +9,7 @@ export default function SectionRoadmap(props) {
   return (
     <div className={styles.body}>
       <h1 className={styles.heading}>🌎 Filecoin Web Services</h1>
-      <p className={styles.desc}>
-        Building out the alternative to AWS, GCP, and Azure. Using the power of Filecoin, a powerful L0 and decentralized storage network. Learn more about how the Engineering team
-        at Outercore & Protocol Labs aims to achieve this by reading our Roadmap.
-      </p>
+      <p className={styles.desc}>Building out the alternative to AWS, GCP, and Azure. Using the power of Filecoin, the world's largest decentralized storage network.</p>
       <p className={styles.paragraph}>This is our mission:</p>
       <p className={styles.quote}>
         We want an internet where resources are owned & shared by everyone. Everyone shares consensus over a distributed ledger. Data storage is verifiably stored for the end-user,
@@ -32,15 +29,12 @@ export default function SectionRoadmap(props) {
         </a>
       </h3>
       <img src="https://user-images.githubusercontent.com/310223/221113426-80a53e2b-9eb1-470c-a26b-f3aba69008f6.png" className={styles.image} />
-      <p className={styles.paragraph}>Our solution to archival and cold storage use cases. See our Delta node's current performance:</p>
+      <img src="https://user-images.githubusercontent.com/310223/223874359-ce0aa15b-8e96-40ef-be38-893d16bbaf19.png" className={styles.image} />
+      <p className={styles.paragraph}>Use Delta to make end-to-end deals and import deals.</p>
 
       <p className={styles.paragraph}>
-        Use ∆ Delta to upload all your data to Filecoin storage providers. Delta has a straight forward deal manager. Either import your deals or use the end-to-end tooling. It is
-        written in Go and designed to be paired well with bare-metal infrastructure. Delta can be integrated well with any deal preparation tooling such as{' '}
-        <a href="https://github.com/anjor/filecoin_data_prep_tools" target="_blank">
-          https://github.com/anjor/filecoin_data_prep_tools
-        </a>
-        .
+        It is written in Go and designed to be paired well with bare-metal infrastructure. Delta can be integrated well with any deal preparation tooling and is modular. If you're
+        a storage provider, upload deals to yourself, send deals to other people, and do whatever you want to onboard data.
       </p>
 
       <ul className={styles.list}>
@@ -182,7 +176,7 @@ export default function SectionRoadmap(props) {
 
       <ul className={styles.list}>
         <li className={styles.item}>
-          <strong>Feb 28th, 2023</strong> — Initial roadmap release after internal discussions.
+          <strong>April 15th, 2023</strong> — Initial roadmap release after internal discussions.
         </li>
       </ul>
 

@@ -54,6 +54,7 @@ export default function SectionRoadmap(props) {
           (https://estuary.tech)
         </a>
       </h3>
+      <img src="https://user-images.githubusercontent.com/310223/224477281-ab7d7678-f94f-4e58-ae7e-765f77ba4c10.png" className={styles.image} />
       <img src="https://user-images.githubusercontent.com/310223/221114596-82d71663-9af6-46a5-b2c9-30b7b466b5c0.png" className={styles.image} />
       <p className={styles.paragraph}>Our solution to hot storage and application use cases.</p>
       <p className={styles.paragraph}>
